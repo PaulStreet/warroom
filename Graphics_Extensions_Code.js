@@ -4,8 +4,8 @@ function copyCompletes_() {
 
 function copyCompletes_GFX() {
   var ss = SpreadsheetApp.getActiveSpreadsheet(); // Look at the active spreadsheet
-  var sheet1 = ss.getSheetByName('New Request'); // Get the Load sheet
-  var sheet2 = ss.getSheetByName('Completed Request'); // Store the completed sheet
+  var sheet1 = ss.getSheetByName('New Request'); // Get the New Request sheet
+  var sheet2 = ss.getSheetByName('Completed Request'); // Store in the completed sheet
   
   var data = sheet1.getRange(3,1, sheet1.getLastRow(), sheet1.getLastColumn()).getValues(); 
 	// gets values of sheet starting at row 3
