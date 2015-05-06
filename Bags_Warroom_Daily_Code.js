@@ -8,7 +8,7 @@ function copyCompletes_() {
 function copyCompletes_LI() {
   var ss = SpreadsheetApp.getActiveSpreadsheet(); // Look at the active spreadsheet
   var sheet1 = ss.getSheetByName('Load_Issues'); // Get the Load sheet
-  var sheet2 = ss.getSheetByName('Completed_LI'); // Store the completed sheet
+  var sheet2 = ss.getSheetByName('Completed_LO'); // Store the completed sheet
   
   var data = sheet1.getRange(3,1, sheet1.getLastRow(), sheet1.getLastColumn()).getValues(); 
 	// gets values of sheet starting at row 3
