@@ -7,6 +7,16 @@ set WshShell = CreateObject("WScript.Shell")
    Set SapGui = GetObject("SAPGUI")
 Set Appl = SapGui.GetScriptingEngine
 
+''Deprecated alternate code, wait for 6 seconds
+'Dim dteWait
+'dteWait = DateAdd("s", 6, Now())
+'Do Until (Now() > dteWait)
+'Loop
+
+'Wait for 5 seconds then press enter.
+WScript.Sleep 5000
+WshShell.SendKeys "{ENTER}"
+
 ''This commented section of code doesn't seem to work for me.
 'Set Connection = Appl.Openconnection("Test SAP", True)
 'Set session = Connection.Children(0)
